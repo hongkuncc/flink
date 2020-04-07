@@ -18,7 +18,7 @@ object BoundedFlowDemo {
 //    导入单例类scala中的隐式成员
     import org.apache.flink.api.scala._
 //    迭代计算
-    env.readTextFile("a_input/hello.txt")
+    env.readTextFile("C:\\Users\\hongk\\Desktop\\flink\\flink_basic\\a_input\\hello.txt")//要用相对路径
       .flatMap(line=>line.split("\\s+"))
       .filter(line=>line.nonEmpty)
       .map((_,1))
