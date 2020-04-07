@@ -1,5 +1,8 @@
 package com.hongkuncc.demo01_bounded.sample01_srctarget_local
 
+import org.apache.flink.api.scala.ExecutionEnvironment
+
+
 
 /*
 *
@@ -16,8 +19,8 @@ object BoundedFlowDemo {
     import org.apache.flink.api.scala._
 //    迭代计算
     env.readTextFile("a_input/hello.txt")
-      .flatMap(.split(\\s+))
-      .filter(.nonEmpty)
+      .flatMap(line=>line.split("\\s+"))
+      .filter(line=>line.nonEmpty)
       .map((_,1))
       .groupBy(0)
       .sum(1)
