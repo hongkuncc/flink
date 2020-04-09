@@ -1,4 +1,4 @@
-package com.hongkuncc.demo02_unbounded.demo03_source
+package com.hongkuncc.demo02_unbounded.demo03_source.sample03_kafka
 
 import java.util.Properties
 
