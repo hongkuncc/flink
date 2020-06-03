@@ -20,4 +20,5 @@ package object ReadDataFromKafkaDemo extends App {
     .print("kafka->")
 
   env.execute(this.getClass.getSimpleName)
+
 }
